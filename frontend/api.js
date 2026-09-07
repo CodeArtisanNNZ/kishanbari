@@ -11,8 +11,12 @@ window.KishanAPI = {
   },
   async register(payload) { const data = await this.request("/auth/register", {method:"POST", body:JSON.stringify(payload)}); localStorage.setItem("kishan_token", data.access_token); return data; },
   async login(payload) { const data = await this.request("/auth/login", {method:"POST", body:JSON.stringify(payload)}); localStorage.setItem("kishan_token", data.access_token); return data; },
+  logout() { localStorage.removeItem("kishan_token"); },
+  me: () => window.KishanAPI.request("/me"),
   fields: () => window.KishanAPI.request("/fields"),
   createField: payload => window.KishanAPI.request("/fields", {method:"POST", body:JSON.stringify(payload)}),
   createTest: payload => window.KishanAPI.request("/soil-tests", {method:"POST", body:JSON.stringify(payload)}),
-  analyze: id => window.KishanAPI.request(`/soil-tests/${id}/analyze`, {method:"POST"})
+  tests: fieldId => window.KishanAPI.request(`/soil-tests${fieldId ? `?field_id=${encodeURIComponent(fieldId)}` : ""}`),
+  analyze: id => window.KishanAPI.request(`/soil-tests/${id}/analyze`, {method:"POST"}),
+  analyses: id => window.KishanAPI.request(`/soil-tests/${id}/analyses`)
 };
