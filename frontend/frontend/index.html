@@ -6,20 +6,59 @@
   <meta name="theme-color" content="#163b2a">
   <meta name="description" content="কিশান বাড়ি—ঘরে মাটি পরীক্ষা, ফল বোঝা ও ফসলের পরবর্তী পদক্ষেপ ঠিক করার সহজ বাংলা সহায়ক।">
   <title>কিশান বাড়ি — মাটির কথা, সহজ ভাষায়</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="integration.css">
 </head>
+
 <body>
   <a class="skip" href="#main">মূল অংশে যান</a>
+
   <header class="topbar">
-    <a class="brand" href="#home" aria-label="কিশান বাড়ি হোম"><span class="brandmark">ক</span><span>কিশান বাড়ি<small>মাটির কথা, সহজ ভাষায়</small></span></a>
+    <a class="brand" href="#home" aria-label="কিশান বাড়ি হোম">
+      <span class="brandmark">ক</span>
+      <span>
+        কিশান বাড়ি
+        <small>মাটির কথা, সহজ ভাষায়</small>
+      </span>
+    </a>
+
     <nav aria-label="প্রধান নেভিগেশন">
-      <button class="navlink active" data-view="home">হোম</button><button class="navlink" data-view="test">মাটি পরীক্ষা</button><button class="navlink" data-view="dashboard">আমার জমি</button><button class="navlink" data-view="learn">সহায়িকা</button>
+      <button class="navlink active" data-view="home">হোম</button>
+      <button class="navlink" data-view="test">মাটি পরীক্ষা</button>
+      <button class="navlink" data-view="dashboard">আমার জমি</button>
+      <button class="navlink" data-view="learn">সহায়িকা</button>
     </nav>
-    <div class="actions"><button class="lang" id="langBtn" aria-label="ভাষা পরিবর্তন">EN</button><button class="auth-button" id="authBtn">লগইন</button><button class="profile" id="profileBtn" aria-label="প্রোফাইল" hidden>কৃ</button><button class="menu" id="menuBtn" aria-label="মেনু" aria-expanded="false">☰</button></div>
+
+    <div class="actions">
+      <button class="lang" id="langBtn" aria-label="ভাষা পরিবর্তন">EN</button>
+
+      <button class="auth-button" id="authBtn">
+        লগইন
+      </button>
+
+      <button
+        class="profile"
+        id="profileBtn"
+        aria-label="প্রোফাইল"
+        hidden
+      >
+        কৃ
+      </button>
+
+      <button
+        class="menu"
+        id="menuBtn"
+        aria-label="মেনু"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+    </div>
   </header>
 
   <main id="main">
@@ -27,40 +66,495 @@
       <div class="hero">
         <div class="hero-copy">
           <span class="eyebrow">মাঠ সহায়িকা · বাংলাদেশ</span>
-          <h1 id="home-title">মাটি পরীক্ষা করুন।<br><em>ফলটা বুঝে নিন।</em></h1>
-          <p>কিটের ফল ধাপে ধাপে লিখুন। কিশান বাড়ি তথ্যগুলো গুছিয়ে দেখাবে—কোন দিকে নজর দেওয়া দরকার এবং কখন বিশেষজ্ঞের কাছে যেতে হবে।</p>
-          <div class="hero-actions"><button class="primary" data-go="test">পরীক্ষা শুরু করুন <span>→</span></button><button class="secondary" data-go="learn">কীভাবে কাজ করে</button></div>
-          <div class="trust"><span>✓ ৬টি সহজ পরীক্ষা</span><span>✓ বাংলা নির্দেশনা</span><span>✓ ফল সংরক্ষণ</span></div>
+
+          <h1 id="home-title">
+            মাটি পরীক্ষা করুন।<br>
+            <em>ফলটা বুঝে নিন।</em>
+          </h1>
+
+          <p>
+            কিটের ফল ধাপে ধাপে লিখুন। কিশান বাড়ি তথ্যগুলো গুছিয়ে
+            দেখাবে—কোন দিকে নজর দেওয়া দরকার এবং কখন বিশেষজ্ঞের
+            কাছে যেতে হবে।
+          </p>
+
+          <div class="hero-actions">
+            <button class="primary" data-go="test">
+              পরীক্ষা শুরু করুন <span>→</span>
+            </button>
+
+            <button class="secondary" data-go="learn">
+              কীভাবে কাজ করে
+            </button>
+          </div>
+
+          <div class="trust">
+            <span>✓ ৬টি সহজ পরীক্ষা</span>
+            <span>✓ বাংলা নির্দেশনা</span>
+            <span>✓ ফল সংরক্ষণ</span>
+          </div>
         </div>
+
         <div class="soil-card" aria-label="নমুনা মাটি স্বাস্থ্য সারাংশ">
-          <div class="field-top"><div><span>জমি ০১</span><strong>রাজশাহী · গোদাগাড়ী</strong></div><button aria-label="আরও অপশন">•••</button></div>
-          <div class="field-record"><span>নমুনা নং</span><strong>KB–01–2026</strong><span>শেষ পরীক্ষা</span><strong>২৬ আগস্ট ২০২৬</strong><span>বর্তমান ফসল</span><strong>আমন ধান</strong></div>
-          <div class="score-row"><div class="score"><span>মাটি স্বাস্থ্য</span><strong>৭২<small>/১০০</small></strong></div><div class="status"><i></i><div><span>সামগ্রিক অবস্থা</span><strong>মোটামুটি ভালো</strong></div></div></div>
-          <div class="mini-grid"><div><span>pH</span><strong>৬.২</strong><small>উপযুক্ত</small></div><div><span>আর্দ্রতা</span><strong>৪১%</strong><small>মাঝারি</small></div><div><span>নাইট্রোজেন</span><strong>কম</strong><small>মনোযোগ দিন</small></div></div>
-          <p class="demo-note">এটি শুধু ইন্টারফেসের নমুনা—বাস্তব পরীক্ষার ফল নয়।</p>
+          <div class="field-top">
+            <div>
+              <span>জমি ০১</span>
+              <strong>রাজশাহী · গোদাগাড়ী</strong>
+            </div>
+            <button aria-label="আরও অপশন">•••</button>
+          </div>
+
+          <div class="field-record">
+            <span>নমুনা নং</span>
+            <strong>KB–01–2026</strong>
+
+            <span>শেষ পরীক্ষা</span>
+            <strong>২৬ আগস্ট ২০২৬</strong>
+
+            <span>বর্তমান ফসল</span>
+            <strong>আমন ধান</strong>
+          </div>
+
+          <div class="score-row">
+            <div class="score">
+              <span>মাটি স্বাস্থ্য</span>
+              <strong>৭২<small>/১০০</small></strong>
+            </div>
+
+            <div class="status">
+              <i></i>
+              <div>
+                <span>সামগ্রিক অবস্থা</span>
+                <strong>মোটামুটি ভালো</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="mini-grid">
+            <div>
+              <span>pH</span>
+              <strong>৬.২</strong>
+              <small>উপযুক্ত</small>
+            </div>
+
+            <div>
+              <span>আর্দ্রতা</span>
+              <strong>৪১%</strong>
+              <small>মাঝারি</small>
+            </div>
+
+            <div>
+              <span>নাইট্রোজেন</span>
+              <strong>কম</strong>
+              <small>মনোযোগ দিন</small>
+            </div>
+          </div>
+
+          <p class="demo-note">
+            এটি শুধু ইন্টারফেসের নমুনা—বাস্তব পরীক্ষার ফল নয়।
+          </p>
         </div>
       </div>
-      <div class="quick-strip"><div><span class="stepno">১</span><p><strong>মাটি সংগ্রহ</strong><small>জমির কয়েক জায়গা থেকে</small></p></div><b>›</b><div><span class="stepno">২</span><p><strong>কিট দিয়ে পরীক্ষা</strong><small>রঙ বা মান মিলিয়ে নিন</small></p></div><b>›</b><div><span class="stepno">৩</span><p><strong>ফল লিখুন</strong><small>ছবিও যোগ করতে পারবেন</small></p></div><b>›</b><div><span class="stepno">৪</span><p><strong>পরামর্শ বুঝুন</strong><small>সহজ বাংলায় করণীয়</small></p></div></div>
-      <section class="section"><div class="section-head"><div><span class="eyebrow">এক নজরে</span><h2>মাটির গুরুত্বপূর্ণ সংকেত</h2></div><button class="text-btn" data-go="learn">সব শিখুন →</button></div><div class="feature-grid"><article><span class="icon">pH</span><h3>অম্লতা ও ক্ষারত্ব</h3><p>ফসলের পুষ্টি গ্রহণে মাটির pH বড় ভূমিকা রাখে।</p></article><article><span class="icon">N</span><h3>প্রধান পুষ্টি</h3><p>নাইট্রোজেন, ফসফরাস ও পটাশের পরীক্ষার ফল একসাথে দেখুন।</p></article><article><span class="icon">◒</span><h3>গঠন ও আর্দ্রতা</h3><p>মাটি বেলে, দোআঁশ না এঁটেল—সহজ হাতে-কলমে পরীক্ষা করুন।</p></article></div></section>
+
+      <div class="quick-strip">
+        <div>
+          <span class="stepno">১</span>
+          <p>
+            <strong>মাটি সংগ্রহ</strong>
+            <small>জমির কয়েক জায়গা থেকে</small>
+          </p>
+        </div>
+
+        <b>›</b>
+
+        <div>
+          <span class="stepno">২</span>
+          <p>
+            <strong>কিট দিয়ে পরীক্ষা</strong>
+            <small>রঙ বা মান মিলিয়ে নিন</small>
+          </p>
+        </div>
+
+        <b>›</b>
+
+        <div>
+          <span class="stepno">৩</span>
+          <p>
+            <strong>ফল লিখুন</strong>
+            <small>পরীক্ষার মান যোগ করুন</small>
+          </p>
+        </div>
+
+        <b>›</b>
+
+        <div>
+          <span class="stepno">৪</span>
+          <p>
+            <strong>পরামর্শ বুঝুন</strong>
+            <small>সহজ বাংলায় করণীয়</small>
+          </p>
+        </div>
+      </div>
+
+      <section class="section">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">এক নজরে</span>
+            <h2>মাটির গুরুত্বপূর্ণ সংকেত</h2>
+          </div>
+
+          <button class="text-btn" data-go="learn">
+            সব শিখুন →
+          </button>
+        </div>
+
+        <div class="feature-grid">
+          <article>
+            <span class="icon">pH</span>
+            <h3>অম্লতা ও ক্ষারত্ব</h3>
+            <p>ফসলের পুষ্টি গ্রহণে মাটির pH বড় ভূমিকা রাখে।</p>
+          </article>
+
+          <article>
+            <span class="icon">N</span>
+            <h3>প্রধান পুষ্টি</h3>
+            <p>
+              নাইট্রোজেন, ফসফরাস ও পটাশের পরীক্ষার ফল একসাথে দেখুন।
+            </p>
+          </article>
+
+          <article>
+            <span class="icon">◒</span>
+            <h3>গঠন ও আর্দ্রতা</h3>
+            <p>
+              মাটি বেলে, দোআঁশ না এঁটেল—সহজ হাতে-কলমে পরীক্ষা করুন।
+            </p>
+          </article>
+        </div>
+      </section>
     </section>
 
     <section class="view" id="test" aria-labelledby="test-title">
-      <div class="page-head"><div><span class="eyebrow">নতুন পরীক্ষা</span><h1 id="test-title">মাটির তথ্য যোগ করুন</h1><p>প্রতিটি ধাপের উত্তর দিন। নিশ্চিত না হলে “জানি না” বেছে নিতে পারেন।</p></div><span class="draft">খসড়া নিজে থেকে সংরক্ষিত</span></div>
+      <div class="page-head">
+        <div>
+          <span class="eyebrow">নতুন পরীক্ষা</span>
+          <h1 id="test-title">মাটির তথ্য যোগ করুন</h1>
+          <p>
+            প্রতিটি ধাপের উত্তর দিন। নিশ্চিত না হলে “জানি না” বেছে নিতে পারেন।
+          </p>
+        </div>
+
+        <span class="draft">তথ্য ধাপে ধাপে সংগ্রহ করা হবে</span>
+      </div>
+
       <div class="test-layout">
-        <aside class="steps" aria-label="পরীক্ষার ধাপ"><button class="done" data-step="0"><b>✓</b><span>জমির পরিচয়<small>স্থান ও ফসল</small></span></button><button class="current" data-step="1"><b>২</b><span>pH পরীক্ষা<small>রঙ মিলিয়ে নিন</small></span></button><button data-step="2"><b>৩</b><span>পুষ্টি পরীক্ষা<small>N, P ও K</small></span></button><button data-step="3"><b>৪</b><span>মাটির গঠন<small>হাতে পরীক্ষা</small></span></button><button data-step="4"><b>৫</b><span>আর্দ্রতা<small>বর্তমান অবস্থা</small></span></button><button data-step="5"><b>৬</b><span>পর্যালোচনা<small>জমা দেওয়ার আগে</small></span></button></aside>
-        <form class="test-panel" id="soilForm"><div class="progress"><span></span></div><span class="step-label"></span><div id="stepContent"></div><div class="form-nav"><button type="button" class="secondary" id="backBtn">← আগে</button><button type="button" class="primary" id="nextBtn">পরের ধাপ →</button></div></form>
+        <aside class="steps" aria-label="পরীক্ষার ধাপ">
+          <button class="current" data-step="0">
+            <b>১</b>
+            <span>
+              জমির পরিচয়
+              <small>স্থান ও ফসল</small>
+            </span>
+          </button>
+
+          <button data-step="1">
+            <b>২</b>
+            <span>
+              pH পরীক্ষা
+              <small>রঙ বা মান মিলিয়ে নিন</small>
+            </span>
+          </button>
+
+          <button data-step="2">
+            <b>৩</b>
+            <span>
+              পুষ্টি পরীক্ষা
+              <small>N, P ও K</small>
+            </span>
+          </button>
+
+          <button data-step="3">
+            <b>৪</b>
+            <span>
+              মাটির গঠন
+              <small>হাতে পরীক্ষা</small>
+            </span>
+          </button>
+
+          <button data-step="4">
+            <b>৫</b>
+            <span>
+              আর্দ্রতা
+              <small>বর্তমান অবস্থা</small>
+            </span>
+          </button>
+
+          <button data-step="5">
+            <b>৬</b>
+            <span>
+              পর্যালোচনা
+              <small>জমা দেওয়ার আগে</small>
+            </span>
+          </button>
+        </aside>
+
+        <form class="test-panel" id="soilForm">
+          <div class="progress">
+            <span></span>
+          </div>
+
+          <span class="step-label"></span>
+
+          <div id="stepContent"></div>
+
+          <div class="form-nav">
+            <button type="button" class="secondary" id="backBtn">
+              ← আগে
+            </button>
+
+            <button type="button" class="primary" id="nextBtn">
+              পরের ধাপ →
+            </button>
+          </div>
+        </form>
       </div>
     </section>
 
-    <section class="view" id="dashboard" aria-labelledby="dash-title"><div class="page-head"><div><span class="eyebrow">আমার জমি</span><h1 id="dash-title">আপনার জমির খাতা</h1><p>সংরক্ষিত জমি ও পরীক্ষার ইতিহাস এক জায়গায়।</p></div><button class="primary" data-go="test">+ নতুন পরীক্ষা</button></div><div class="stats"><div><span>সংরক্ষিত জমি</span><strong id="fieldCount">০</strong></div><div><span>মোট পরীক্ষা</span><strong id="testCount">০</strong></div><div><span>অ্যাকাউন্ট</span><strong id="accountStatus">লগইন করুন</strong></div></div><div class="dashboard-grid"><section class="panel"><div class="panel-head"><h2>জমির তালিকা</h2></div><div id="fieldList" class="empty-state">তথ্য দেখতে লগইন করুন।</div></section><section class="panel"><div class="panel-head"><h2>সাম্প্রতিক ফল</h2></div><div id="resultList" class="empty-state">এখনও কোনো ফল নেই।</div></section></div><div class="notice"><strong>গুরুত্বপূর্ণ</strong><p>কিশান বাড়ির ফল প্রাথমিক সিদ্ধান্তে সহায়তা করে। বড় বিনিয়োগ, রোগ নির্ণয় বা নির্দিষ্ট সারের মাত্রার জন্য অনুমোদিত ল্যাব বা স্থানীয় কৃষি কর্মকর্তার পরামর্শ নিন।</p></div></section>
+    <section class="view" id="dashboard" aria-labelledby="dash-title">
+      <div class="page-head">
+        <div>
+          <span class="eyebrow">আমার জমি</span>
+          <h1 id="dash-title">আপনার জমির খাতা</h1>
+          <p>সংরক্ষিত জমি ও পরীক্ষার ইতিহাস এক জায়গায়।</p>
+        </div>
 
-    <section class="view" id="learn" aria-labelledby="learn-title"><div class="page-head"><div><span class="eyebrow">সহজ সহায়িকা</span><h1 id="learn-title">সঠিক নমুনা, ভালো ফল</h1><p>পরীক্ষার আগে এই ছোট নির্দেশনাগুলো দেখুন।</p></div></div><div class="guide-grid"><article><span>০১</span><h2>জমি ভাগ করুন</h2><p>রঙ, ঢাল বা ফসল আলাদা হলে জায়গাগুলোকে আলাদা নমুনা এলাকা ধরুন।</p></article><article><span>০২</span><h2>একাধিক স্থান নিন</h2><p>একই এলাকার কয়েকটি জায়গা থেকে সমান গভীরতায় অল্প অল্প মাটি নিন।</p></article><article><span>০৩</span><h2>মিশিয়ে নমুনা বানান</h2><p>পাথর ও শিকড় সরিয়ে পরিষ্কার পাত্রে মাটি ভালোভাবে মেশান।</p></article><article><span>০৪</span><h2>নির্দেশনা মেনে চলুন</h2><p>কিটের নির্ধারিত মাটি, পানি ও অপেক্ষার সময় বদলাবেন না।</p></article></div><section class="faq"><h2>সাধারণ প্রশ্ন</h2><details><summary>এই ফল কি ল্যাব পরীক্ষার বিকল্প?</summary><p>না। এটি স্বল্প খরচের প্রাথমিক স্ক্রিনিং। গুরুতর সিদ্ধান্তের আগে ল্যাবে যাচাই প্রয়োজন।</p></details><details><summary>একই জমি কতদিন পর পরীক্ষা করব?</summary><p>মৌসুম, ফসল ও ব্যবস্থাপনার ওপর নির্ভর করে। বড় পরিবর্তন বা সমস্যা দেখা দিলে আবার পরীক্ষা করুন।</p></details><details><summary>ছবির রঙ ভুল পড়লে কী হবে?</summary><p>আলো ও ক্যামেরার কারণে রঙ বদলাতে পারে। তাই কিটের চার্ট দেখে হাতে বাছাই করার পথও রাখা হয়েছে।</p></details></section></section>
+        <button class="primary" data-go="test">
+          + নতুন পরীক্ষা
+        </button>
+      </div>
+
+      <div class="stats">
+        <div>
+          <span>সংরক্ষিত জমি</span>
+          <strong id="fieldCount">০</strong>
+        </div>
+
+        <div>
+          <span>মোট পরীক্ষা</span>
+          <strong id="testCount">০</strong>
+        </div>
+
+        <div>
+          <span>অ্যাকাউন্ট</span>
+          <strong id="accountStatus">লগইন করুন</strong>
+        </div>
+      </div>
+
+      <div class="dashboard-grid">
+        <section class="panel">
+          <div class="panel-head">
+            <h2>জমির তালিকা</h2>
+          </div>
+
+          <div id="fieldList" class="empty-state">
+            তথ্য দেখতে লগইন করুন।
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <h2>সাম্প্রতিক ফল</h2>
+          </div>
+
+          <div id="resultList" class="empty-state">
+            এখনও কোনো ফল নেই।
+          </div>
+        </section>
+      </div>
+
+      <div class="notice">
+        <strong>গুরুত্বপূর্ণ</strong>
+        <p>
+          কিশান বাড়ির ফল প্রাথমিক সিদ্ধান্তে সহায়তা করে। বড় বিনিয়োগ,
+          রোগ নির্ণয় বা নির্দিষ্ট সারের মাত্রার জন্য অনুমোদিত ল্যাব
+          অথবা স্থানীয় কৃষি কর্মকর্তার পরামর্শ নিন।
+        </p>
+      </div>
+    </section>
+
+    <section class="view" id="learn" aria-labelledby="learn-title">
+      <div class="page-head">
+        <div>
+          <span class="eyebrow">সহজ সহায়িকা</span>
+          <h1 id="learn-title">সঠিক নমুনা, ভালো ফল</h1>
+          <p>পরীক্ষার আগে এই ছোট নির্দেশনাগুলো দেখুন।</p>
+        </div>
+      </div>
+
+      <div class="guide-grid">
+        <article>
+          <span>০১</span>
+          <h2>জমি ভাগ করুন</h2>
+          <p>
+            রঙ, ঢাল বা ফসল আলাদা হলে জায়গাগুলোকে আলাদা নমুনা এলাকা ধরুন।
+          </p>
+        </article>
+
+        <article>
+          <span>০২</span>
+          <h2>একাধিক স্থান নিন</h2>
+          <p>
+            একই এলাকার কয়েকটি জায়গা থেকে সমান গভীরতায় অল্প অল্প মাটি নিন।
+          </p>
+        </article>
+
+        <article>
+          <span>০৩</span>
+          <h2>মিশিয়ে নমুনা বানান</h2>
+          <p>
+            পাথর ও শিকড় সরিয়ে পরিষ্কার পাত্রে মাটি ভালোভাবে মেশান।
+          </p>
+        </article>
+
+        <article>
+          <span>০৪</span>
+          <h2>নির্দেশনা মেনে চলুন</h2>
+          <p>
+            কিটের নির্ধারিত মাটি, পানি ও অপেক্ষার সময় বদলাবেন না।
+          </p>
+        </article>
+      </div>
+
+      <section class="faq">
+        <h2>সাধারণ প্রশ্ন</h2>
+
+        <details>
+          <summary>এই ফল কি ল্যাব পরীক্ষার বিকল্প?</summary>
+          <p>
+            না। এটি স্বল্প খরচের প্রাথমিক স্ক্রিনিং। গুরুতর সিদ্ধান্তের
+            আগে ল্যাবে যাচাই প্রয়োজন।
+          </p>
+        </details>
+
+        <details>
+          <summary>একই জমি কতদিন পর পরীক্ষা করব?</summary>
+          <p>
+            মৌসুম, ফসল ও ব্যবস্থাপনার ওপর নির্ভর করে। বড় পরিবর্তন
+            অথবা সমস্যা দেখা দিলে আবার পরীক্ষা করুন।
+          </p>
+        </details>
+
+        <details>
+          <summary>রঙ ভুল পড়লে কী হবে?</summary>
+          <p>
+            আলো ও ক্যামেরার কারণে রঙ বদলাতে পারে। তাই কিটের চার্টের
+            সঙ্গে দিনের আলোতে মিলিয়ে নিন।
+          </p>
+        </details>
+      </section>
+    </section>
   </main>
-  <dialog id="authDialog" class="auth-dialog"><button class="dialog-close" id="closeAuth" aria-label="বন্ধ করুন">×</button><span class="eyebrow">কৃষকের খাতা</span><h2 id="authTitle">লগইন করুন</h2><p>নিজের জমি ও পরীক্ষার ফল নিরাপদে রাখুন।</p><div class="auth-tabs"><button type="button" class="active" data-auth="login">লগইন</button><button type="button" data-auth="register">নতুন অ্যাকাউন্ট</button></div><form id="authForm"><label class="register-only">নাম<input name="name" autocomplete="name"></label><label>ইমেইল<input name="email" type="email" autocomplete="email" required></label><label class="register-only">ফোন (ঐচ্ছিক)<input name="phone" autocomplete="tel"></label><label>পাসওয়ার্ড<input name="password" type="password" minlength="8" autocomplete="current-password" required></label><p class="form-error" id="authError"></p><button class="primary wide" type="submit">চালিয়ে যান</button></form></dialog>
-  <dialog id="resultDialog" class="result-dialog"><button class="dialog-close" id="closeResult" aria-label="বন্ধ করুন">×</button><span class="eyebrow">প্রাথমিক বিশ্লেষণ</span><h2>মাটির ফলাফল</h2><div id="analysisResult"></div></dialog>
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <footer><div class="brand"><span class="brandmark">ক</span><span>কিশান বাড়ি<small>কৃষকের সিদ্ধান্ত সহায়ক</small></span></div><p>প্রাথমিক মাটি পরীক্ষা ও শেখার প্ল্যাটফর্ম</p><span>© ২০২৬ কিশান বাড়ি</span></footer>
+
+  <dialog id="authDialog" class="auth-dialog">
+    <button
+      class="dialog-close"
+      id="closeAuth"
+      aria-label="বন্ধ করুন"
+    >
+      ×
+    </button>
+
+    <span class="eyebrow">কৃষকের খাতা</span>
+    <h2 id="authTitle">লগইন করুন</h2>
+    <p>নিজের জমি ও পরীক্ষার ফল নিরাপদে রাখুন।</p>
+
+    <div class="auth-tabs">
+      <button type="button" class="active" data-auth="login">
+        লগইন
+      </button>
+
+      <button type="button" data-auth="register">
+        নতুন অ্যাকাউন্ট
+      </button>
+    </div>
+
+    <form id="authForm">
+      <label class="register-only">
+        নাম
+        <input name="name" autocomplete="name">
+      </label>
+
+      <label>
+        ইমেইল
+        <input
+          name="email"
+          type="email"
+          autocomplete="email"
+          required
+        >
+      </label>
+
+      <label class="register-only">
+        ফোন (ঐচ্ছিক)
+        <input name="phone" autocomplete="tel">
+      </label>
+
+      <label>
+        পাসওয়ার্ড
+        <input
+          name="password"
+          type="password"
+          minlength="8"
+          autocomplete="current-password"
+          required
+        >
+      </label>
+
+      <p class="form-error" id="authError"></p>
+
+      <button class="primary wide" type="submit">
+        চালিয়ে যান
+      </button>
+    </form>
+  </dialog>
+
+  <dialog id="resultDialog" class="result-dialog">
+    <button
+      class="dialog-close"
+      id="closeResult"
+      aria-label="বন্ধ করুন"
+    >
+      ×
+    </button>
+
+    <span class="eyebrow">প্রাথমিক বিশ্লেষণ</span>
+    <h2>মাটির ফলাফল</h2>
+
+    <div id="analysisResult"></div>
+  </dialog>
+
+  <div
+    class="toast"
+    id="toast"
+    role="status"
+    aria-live="polite"
+  ></div>
+
+  <footer>
+    <div class="brand">
+      <span class="brandmark">ক</span>
+      <span>
+        কিশান বাড়ি
+        <small>কৃষকের সিদ্ধান্ত সহায়ক</small>
+      </span>
+    </div>
+
+    <p>প্রাথমিক মাটি পরীক্ষা ও শেখার প্ল্যাটফর্ম</p>
+    <span>© ২০২৬ কিশান বাড়ি</span>
+  </footer>
+
   <script src="config.js"></script>
   <script src="api.js"></script>
   <script src="script.js"></script>
-</body></html>
+</body>
+</html>
